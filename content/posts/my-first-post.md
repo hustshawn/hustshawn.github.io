@@ -1,10 +1,12 @@
 ---
 title: "My First Post"
 date: 2022-07-20T16:50:15+08:00
+tags: ["hugo"]
+layout: post
 draft: faslse
 ---
 
-# My first Post
+# 1st level header
 Text under 1st level header
 ## 2nd level header
 Text under 2nd level header
@@ -15,7 +17,7 @@ def do_something():
 ```
 
 
-### 3nd level header
+### 3rd level header
 Text under 3rd level header
 ```go
 go func(){
