@@ -1,0 +1,8 @@
+baseURL = 'https://hustshawn.github.io'
+languageCode = 'en-us'
+title = 'Soho Theme Blog' 
+theme = "soho"
+
+[params]
+  author = 'Shawn Zhang'
+  description = "Shawn's Awesome Hugo Site"
