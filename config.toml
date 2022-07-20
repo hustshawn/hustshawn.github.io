@@ -1,8 +1,8 @@
-baseURL = 'https://hustshawn.github.io'
-languageCode = 'en-us'
-title = 'Shawn's Blog with Hugo'
+baseURL = "https://hustshawn.github.io"
+languageCode = "en-us"
+title = "Shawn's Blog with Hugo"
 theme = "ananke"
 
 [params]
-  author = 'Shawn Zhang'
+  author = "Shawn Zhang"
   description = "Shawn's Awesome Hugo Site"
