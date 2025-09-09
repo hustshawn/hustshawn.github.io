@@ -1,0 +1,165 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Technical Blog'
+description: 'A technical blog for sharing knowledge and insights'
+author: 'Blog Author'
+
+# Theme configuration
+theme: 'PaperMod'
+
+# Markup configuration for syntax highlighting
+markup:
+  highlight:
+    style: 'monokai'
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 2
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+
+# Site parameters
+params:
+  # Math and diagram support
+  math: true
+  mermaid: true
+  # PaperMod theme settings
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 'Technical Blog'
+  description: 'A technical blog for sharing knowledge and insights'
+  keywords: ['technical', 'blog', 'programming', 'development', 'coding', 'software']
+  author: 'Blog Author'
+  
+  # Theme appearance
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  
+  # Profile mode (for homepage)
+  profileMode:
+    enabled: false
+    title: 'Technical Blog'
+    subtitle: 'Sharing knowledge and insights'
+    imageUrl: ''
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: 'Technical Blog'
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+  
+  # Home page settings
+  homeInfoParams:
+    Title: 'Welcome to Technical Blog'
+    Content: 'A place for sharing technical knowledge, programming insights, and development best practices.'
+  
+  # Social media and SEO
+  socialIcons:
+    - name: github
+      url: 'https://github.com/'
+    - name: twitter
+      url: 'https://twitter.com/'
+    - name: linkedin
+      url: 'https://linkedin.com/in/'
+    - name: rss
+      url: 'index.xml'
+  
+  # Blog settings optimized for technical content
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  
+  # Search functionality
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  
+  # Assets and styling
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+  
+  # Cover image settings
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+  
+  # Edit post settings
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+# Menu configuration
+menu:
+  main:
+    - name: 'Home'
+      url: '/'
+      weight: 10
+    - name: 'Posts'
+      url: '/posts/'
+      weight: 20
+    - name: 'Tags'
+      url: '/tags/'
+      weight: 25
+    - name: 'Categories'
+      url: '/categories/'
+      weight: 26
+    - name: 'Search'
+      url: '/search/'
+      weight: 27
+    - name: 'About'
+      url: '/about/'
+      weight: 30
+
+# Taxonomies
+taxonomies:
+  tag: 'tags'
+  category: 'categories'
+
+# Output formats
+outputs:
+  home: ['HTML', 'RSS', 'JSON']
+  page: ['HTML']
+  section: ['HTML', 'RSS']
+
+# Permalinks
+permalinks:
+  posts: '/:year/:month/:title/'
+
+# Build settings
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Security settings
+security:
+  enableInlineShortcodes: false
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^WC_'

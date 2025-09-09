@@ -1,0 +1,274 @@
+/* Authentic Monokai theme for technical blog */
+
+/* Code block styling with authentic Monokai colors */
+.highlight {
+  background-color: #272822 !important;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.highlight pre {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight code {
+  background-color: transparent !important;
+  color: #f8f8f2 !important;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Authentic Monokai syntax highlighting colors */
+.highlight .chroma {
+  background-color: #272822 !important;
+}
+
+/* Keywords (def, class, if, for, etc.) - Pink/Magenta */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #f92672 !important;
+  font-weight: normal !important;
+}
+
+/* Strings - Yellow */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #e6db74 !important;
+}
+
+/* Numbers - Purple */
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+  color: #ae81ff !important;
+}
+
+/* Comments - Gray */
+.highlight .c,
+.highlight .c1,
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .cs {
+  color: #75715e !important;
+  font-style: italic !important;
+}
+
+/* Function names - Green */
+.highlight .nf,
+.highlight .fm {
+  color: #a6e22e !important;
+}
+
+/* Class names - Green (underlined) */
+.highlight .nc {
+  color: #a6e22e !important;
+  text-decoration: underline !important;
+}
+
+/* Variables and identifiers - White */
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .bp,
+.highlight .ne,
+.highlight .ni,
+.highlight .nl,
+.highlight .nn,
+.highlight .nx,
+.highlight .py,
+.highlight .nt,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: #f8f8f2 !important;
+}
+
+/* Operators - Pink/Magenta */
+.highlight .o,
+.highlight .ow {
+  color: #f92672 !important;
+}
+
+/* Punctuation - White */
+.highlight .p {
+  color: #f8f8f2 !important;
+}
+
+/* Built-in constants (true, false, null) - Purple */
+.highlight .kc {
+  color: #ae81ff !important;
+}
+
+/* Decorators - Green */
+.highlight .nd {
+  color: #a6e22e !important;
+}
+
+/* Inline code styling with authentic Monokai */
+:not(pre) > code {
+  background-color: #3e3d32 !important;
+  color: #f8f8f2 !important;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.85rem;
+}
+
+/* Line numbers styling for Monokai */
+.highlight .ln,
+.highlight .lnt {
+  color: #75715e !important;
+  margin-right: 1rem;
+  user-select: none;
+}
+
+/* Copy button styling */
+.highlight .copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #49483e;
+  color: #f8f8f2;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.highlight .copy-button:hover {
+  opacity: 1;
+  background: #66d9ef;
+  color: #272822;
+}
+
+/* Enhanced readability for technical content */
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.post-content h2 {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+/* Table styling for technical documentation */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.post-content table th,
+.post-content table td {
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.post-content table th {
+  background-color: var(--theme);
+  font-weight: 600;
+}
+
+/* Blockquote styling for technical notes */
+.post-content blockquote {
+  border-left: 4px solid #66d9ef;
+  background-color: var(--code-bg);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Enhanced list styling */
+.post-content ul,
+.post-content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin: 0.5rem 0;
+}
+
+/* Responsive design enhancements */
+@media (max-width: 768px) {
+  .highlight {
+    margin: 1rem -1rem;
+    border-radius: 0;
+  }
+
+  .highlight code {
+    font-size: 0.8rem;
+  }
+
+  :not(pre) > code {
+    font-size: 0.8rem;
+  }
+}
+
+/* Dark mode specific adjustments */
+[data-theme="dark"] .highlight {
+  background-color: #272822 !important;
+}
+
+[data-theme="dark"] :not(pre) > code {
+  background-color: #3e3d32 !important;
+  color: #f8f8f2 !important;
+}
+
+/* Light mode adjustments for better contrast */
+[data-theme="light"] .highlight {
+  background-color: #272822 !important;
+}
+
+[data-theme="light"] .highlight code {
+  color: #f8f8f2 !important;
+}
+
+[data-theme="light"] :not(pre) > code {
+  background-color: #3e3d32 !important;
+  color: #f8f8f2 !important;
+}
