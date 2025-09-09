@@ -1,8 +1,8 @@
-baseURL: 'https://example.org/'
+baseURL: 'https://hustshawn.github.io/'
 languageCode: 'en-us'
-title: 'Technical Blog'
+title: "Shawn's Technical Blog"
 description: 'A technical blog for sharing knowledge and insights'
-author: 'Blog Author'
+author: 'Shawn Zhang'
 
 # Theme configuration
 theme: 'PaperMod'
@@ -25,10 +25,10 @@ params:
   mermaid: true
   # PaperMod theme settings
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: 'Technical Blog'
+  title: "Shawn's Technical Blog"
   description: 'A technical blog for sharing knowledge and insights'
   keywords: ['technical', 'blog', 'programming', 'development', 'coding', 'software']
-  author: 'Blog Author'
+  author: 'Shawn Zhang'
   
   # Theme appearance
   defaultTheme: auto # dark, light
@@ -37,12 +37,12 @@ params:
   # Profile mode (for homepage)
   profileMode:
     enabled: false
-    title: 'Technical Blog'
+    title: "Shawn's Technical Blog"
     subtitle: 'Sharing knowledge and insights'
     imageUrl: ''
     imageWidth: 120
     imageHeight: 120
-    imageTitle: 'Technical Blog'
+    imageTitle: "Shawn's Technical Blog"
     buttons:
       - name: Posts
         url: posts
@@ -51,17 +51,17 @@ params:
   
   # Home page settings
   homeInfoParams:
-    Title: 'Welcome to Technical Blog'
+    Title: "Welcome to Shawn's Technical Blog"
     Content: 'A place for sharing technical knowledge, programming insights, and development best practices.'
   
   # Social media and SEO
   socialIcons:
-    - name: github
-      url: 'https://github.com/'
-    - name: twitter
-      url: 'https://twitter.com/'
     - name: linkedin
-      url: 'https://linkedin.com/in/'
+      url: 'https://www.linkedin.com/in/hustshawn/'
+    - name: github
+      url: 'https://github.com/hustshawn'
+    # - name: twitter
+    #   url: 'https://twitter.com/'
     - name: rss
       url: 'index.xml'
   
@@ -104,13 +104,13 @@ params:
   
   # Cover image settings
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
   
   # Edit post settings
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/hustshawn/hustshawn.github.io/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
