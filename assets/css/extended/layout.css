@@ -1,0 +1,16 @@
+/* General layout adjustments */
+
+/* Fix the large gap caused by .first-entry min-height */
+.first-entry {
+  min-height: 50px !important; /* Override the default min-height */
+}
+
+/* Reduce gap between header/social icons and post list on home page */
+.home-info {
+  margin-bottom: 1.5rem !important; /* Reduced from default */
+}
+
+/* Reduce spacing after social icons */
+.social-icons {
+  margin-bottom: 1rem !important; /* Reduced from default */
+}
