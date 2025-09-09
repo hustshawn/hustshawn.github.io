@@ -1,4 +1,5 @@
 # Hugo Technical Blog
+[![Deploy Hugo site to Pages](https://github.com/hustshawn/hustshawn.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/hustshawn/hustshawn.github.io/actions/workflows/hugo.yml)
 
 A modern technical blog built with Hugo static site generator, featuring the PaperMod theme with Monokai syntax highlighting for optimal code readability.
 

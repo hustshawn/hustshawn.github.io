@@ -1,7 +1,7 @@
 ---
 title: "Thoughts of Vibe Coding"
 date: 2025-09-09T11:07:59+08:00
-draft: true
+draft: false
 description: ""
 tags: ["Vibe Coding", "GenAI"]
 categories: ["Thoughts"]
