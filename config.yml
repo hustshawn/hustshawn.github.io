@@ -1,6 +1,6 @@
 baseURL: 'https://hustshawn.github.io/'
 languageCode: 'en-us'
-title: "Shawn's Technical Blog"
+title: "Clean Arch"
 description: 'A technical blog for sharing knowledge and insights'
 author: 'Shawn Zhang'
 
@@ -25,7 +25,7 @@ params:
   mermaid: true
   # PaperMod theme settings
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Shawn's Technical Blog"
+  title: "Clean Arch"
   description: 'A technical blog for sharing knowledge and insights'
   keywords: ['technical', 'blog', 'programming', 'development', 'coding', 'software']
   author: 'Shawn Zhang'
@@ -37,12 +37,12 @@ params:
   # Profile mode (for homepage)
   profileMode:
     enabled: false
-    title: "Shawn's Technical Blog"
+    title: "Clean Arch"
     subtitle: 'Sharing knowledge and insights'
     imageUrl: ''
     imageWidth: 120
     imageHeight: 120
-    imageTitle: "Shawn's Technical Blog"
+    imageTitle: "Clean Arch"
     buttons:
       - name: Posts
         url: posts
@@ -51,7 +51,7 @@ params:
   
   # Home page settings
   homeInfoParams:
-    Title: "Welcome to Shawn's Technical Blog"
+    Title: "Welcome to Clean Arch"
     Content: 'A place for sharing technical knowledge, programming insights, and development best practices.'
   
   # Social media and SEO
@@ -69,7 +69,7 @@ params:
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
@@ -110,9 +110,9 @@ params:
   
   # Edit post settings
   editPost:
-    URL: "https://github.com/hustshawn/hustshawn.github.io/content"
+    URL: "https://github.com/hustshawn/hustshawn.github.io/"
     Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    appendFilePath: false # to append file path to Edit link
 
 # Menu configuration
 menu:

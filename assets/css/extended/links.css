@@ -1,0 +1,173 @@
+/* Enhanced link styling for better visibility and user experience */
+
+/* Main content links */
+.post-content a,
+.page-content a,
+.entry-content a {
+  color: #1e6bb8 !important; /* Nice blue color */
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 500;
+}
+
+.post-content a:hover,
+.page-content a:hover,
+.entry-content a:hover {
+  /* No color change on hover - keep original color */
+}
+
+/* Alternative underline animation effect */
+.post-content a::after,
+.page-content a::after,
+.entry-content a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #1e6bb8, #4a90e2);
+  transition: width 0.3s ease;
+}
+
+.post-content a:hover::after,
+.page-content a:hover::after,
+.entry-content a:hover::after {
+  width: 100%;
+}
+
+/* External link indicator */
+.post-content a[href^="http"]:not([href*="yourdomain.com"])::before,
+.page-content a[href^="http"]:not([href*="yourdomain.com"])::before,
+.entry-content a[href^="http"]:not([href*="yourdomain.com"])::before {
+  content: "🔗 ";
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-right: 0.2em;
+}
+
+/* Special styling for reference links */
+.post-content a[href*="wikipedia.org"]::before,
+.page-content a[href*="wikipedia.org"]::before,
+.entry-content a[href*="wikipedia.org"]::before {
+  content: "📖 ";
+}
+
+.post-content a[href*="github.com"]::before,
+.page-content a[href*="github.com"]::before,
+.entry-content a[href*="github.com"]::before {
+  content: "⚡ ";
+}
+
+.post-content a[href*="cloud.google.com"]::before,
+.page-content a[href*="cloud.google.com"]::before,
+.entry-content a[href*="cloud.google.com"]::before {
+  content: "☁️ ";
+}
+
+/* Navigation and menu links */
+.nav a,
+.menu a {
+  color: var(--primary) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.menu a:hover {
+  color: #1e6bb8 !important;
+}
+
+/* Footer links */
+.footer a {
+  color: #1e6bb8 !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  /* No color change on hover - keep original color */
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .post-content a,
+[data-theme="dark"] .page-content a,
+[data-theme="dark"] .entry-content a {
+  color: #4a90e2 !important; /* Lighter blue for dark mode */
+}
+
+[data-theme="dark"] .post-content a:hover,
+[data-theme="dark"] .page-content a:hover,
+[data-theme="dark"] .entry-content a:hover {
+  /* No color change on hover - keep original color */
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .post-content a,
+[data-theme="light"] .page-content a,
+[data-theme="light"] .entry-content a {
+  color: #0066cc !important;
+}
+
+[data-theme="light"] .post-content a:hover,
+[data-theme="light"] .page-content a:hover,
+[data-theme="light"] .entry-content a:hover {
+  /* No color change on hover - keep original color */
+}
+
+[data-theme="light"] .post-content a::after,
+[data-theme="light"] .page-content a::after,
+[data-theme="light"] .entry-content a::after {
+  background: linear-gradient(90deg, #0066cc, #004499);
+}
+
+/* Accessibility improvements */
+.post-content a:focus,
+.page-content a:focus,
+.entry-content a:focus {
+  outline: 2px solid #1e6bb8;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .post-content a,
+  .page-content a,
+  .entry-content a {
+    font-weight: 600; /* Make links more prominent on mobile */
+  }
+
+  /* Reduce icon size on mobile */
+  .post-content a[href^="http"]::before,
+  .page-content a[href^="http"]::before,
+  .entry-content a[href^="http"]::before {
+    font-size: 0.7em;
+  }
+}
+
+/* Print styles */
+@media print {
+  .post-content a,
+  .page-content a,
+  .entry-content a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  .post-content a::after,
+  .page-content a::after,
+  .entry-content a::after {
+    display: none;
+  }
+
+  .post-content a[href^="http"]::after,
+  .page-content a[href^="http"]::after,
+  .entry-content a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
