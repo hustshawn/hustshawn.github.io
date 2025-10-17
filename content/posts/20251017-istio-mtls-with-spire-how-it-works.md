@@ -1,9 +1,9 @@
 ---
 title: "Istio Mtls With Spire How It Works"
 date: 2025-10-17T11:45:22+08:00
-draft: true
+draft: false
 description: ""
-tags: ["Istio", "SPIFFE"]
+tags: ["Istio", "SPIFFE", "SPIRE"]
 categories: ["Security"]
 author: "Shawn Zhang"
 showToc: true
