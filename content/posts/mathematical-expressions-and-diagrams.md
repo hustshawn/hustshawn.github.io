@@ -1,7 +1,7 @@
 ---
 title: "Mathematical Expressions and Technical Diagrams Test"
 date: 2024-12-07T15:00:00Z
-draft: false
+draft: true
 tags: ["math", "diagrams", "testing", "technical"]
 categories: ["testing"]
 description: "Testing mathematical expressions and technical diagrams in Hugo"
