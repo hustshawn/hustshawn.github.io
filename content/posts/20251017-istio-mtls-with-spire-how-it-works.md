@@ -1,5 +1,5 @@
 ---
-title: "Istio Mtls With Spire How It Works"
+title: "How Istio mTLS With Spire Works"
 date: 2025-10-17T11:45:22+08:00
 draft: false
 description: ""
