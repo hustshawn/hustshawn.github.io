@@ -132,14 +132,15 @@
   color: #a6e22e !important;
 }
 
-/* Inline code styling with authentic Monokai */
+/* Inline code styling - subtle and clean */
 :not(pre) > code {
-  background-color: #3e3d32 !important;
-  color: #f8f8f2 !important;
+  background-color: rgba(175, 184, 193, 0.2) !important;
+  color: #e83e8c !important;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.85rem;
+  border: 1px solid rgba(175, 184, 193, 0.3);
 }
 
 /* Line numbers styling for Monokai */
@@ -255,8 +256,9 @@
 }
 
 [data-theme="dark"] :not(pre) > code {
-  background-color: #3e3d32 !important;
-  color: #f8f8f2 !important;
+  background-color: rgba(110, 118, 129, 0.3) !important;
+  color: #ff79c6 !important;
+  border: 1px solid rgba(110, 118, 129, 0.4);
 }
 
 /* Light mode adjustments for better contrast */
@@ -269,6 +271,7 @@
 }
 
 [data-theme="light"] :not(pre) > code {
-  background-color: #3e3d32 !important;
-  color: #f8f8f2 !important;
+  background-color: rgba(175, 184, 193, 0.2) !important;
+  color: #d63384 !important;
+  border: 1px solid rgba(175, 184, 193, 0.3);
 }
