@@ -15,7 +15,7 @@ disableShare: false
 searchHidden: false
 mermaid: true
 cover:
-    image: ""
+    image: "/images/20251017-spire-istio-mTLS.png"
     alt: ""
     caption: ""
     relative: false

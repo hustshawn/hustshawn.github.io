@@ -1,7 +1,7 @@
 ---
-title: "20251020 Istio Spire Integration Setup"
+title: "Implement mTLS using Istio Spire Integration"
 date: 2025-10-20T11:50:49+08:00
-draft: true
+draft: false
 description: ""
 tags: []
 categories: []
@@ -14,7 +14,7 @@ disableHLJS: false
 disableShare: false
 searchHidden: false
 cover:
-    image: "/images/20251020-mTLS.png"
+    image: "/images/20251020-title.png"
     alt: ""
     caption: ""
     relative: false
