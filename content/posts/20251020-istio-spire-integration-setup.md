@@ -556,7 +556,7 @@ kubectl exec -n default $POD -c sleep -- sh -c \
 ```
 
 ### 7.5 Visualize mTLS and SPIRE Identities in Kiali
-![Kiali](/images/20251020-istio-spire-kiali-security.png)
+{{< figure style="text-align: center; margin: 0 auto;" src="/images/20251020-istio-spire-kiali-security.png" alt="Kiali" caption="Visualize mTLS and SPIRE Identities in Kiali" >}}
 
 In the Kiali dashboard:
 
@@ -841,3 +841,4 @@ helm install spire spiffe/spire -n spire-server -f spire-values-bar-cluster.yaml
 - [SPIRE Helm Charts](https://artifacthub.io/packages/helm/spiffe/spire)
 - [SPIFFE CSI Driver](https://github.com/spiffe/spiffe-csi)
 - [SPIRE Controller Manager](https://github.com/spiffe/spire-controller-manager)
+- [How to Integrate Istio and SPIRE for Secure Workload Identity](https://imesh.ai/blog/istio-spire-workload-identity/)
