@@ -3,8 +3,8 @@ title: "Implement mTLS using Istio Spire Integration"
 date: 2025-10-20T11:50:49+08:00
 draft: false
 description: ""
-tags: []
-categories: []
+tags: ["Istio", "SPIFFE/SPIRE", "mTLS"]
+categories: ["Security", "Service Mesh"]
 author: "Shawn Zhang"
 showToc: true
 TocOpen: false

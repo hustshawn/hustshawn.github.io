@@ -3,8 +3,8 @@ title: "How Istio mTLS With Spire Works"
 date: 2025-10-17T11:45:22+08:00
 draft: false
 description: ""
-tags: ["Istio", "SPIFFE", "SPIRE"]
-categories: ["Security"]
+tags: ["Istio", "SPIFFE/SPIRE", "mTLS"]
+categories: ["Security", "Service Mesh"]
 author: "Shawn Zhang"
 showToc: true
 TocOpen: false
