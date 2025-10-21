@@ -478,7 +478,7 @@ done | sort | uniq -c
 ```
 
 Expected output (all 200 OK):
-```
+```text
   10 200
 ```
 
