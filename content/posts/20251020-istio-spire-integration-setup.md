@@ -89,7 +89,7 @@ kubectl get pods -n spire-server
 ```
 
 Expected output:
-```
+```text
 NAME                                READY   STATUS    RESTARTS   AGE
 spire-agent-xxxxx                   1/1     Running   0          1m
 spire-server-0                      2/2     Running   0          1m
@@ -150,7 +150,7 @@ kubectl get clusterspiffeid
 ```
 
 Expected output:
-```
+```text
 NAME                        AGE
 default                     10s
 istio-ingressgateway-reg    20s
@@ -241,7 +241,7 @@ kubectl get pods -n istio-system
 ```
 
 Expected output:
-```
+```text
 NAME                                    READY   STATUS    RESTARTS   AGE
 istio-ingressgateway-xxxxxxxxxx-xxxxx   1/1     Running   0          1m
 istiod-xxxxxxxxxx-xxxxx                 1/1     Running   0          1m
@@ -397,7 +397,7 @@ istioctl proxy-config secret $POD.default -o json | \
 ```
 
 Expected output:
-```
+```text
         Issuer: O=foo.com
         Validity
 --
@@ -417,7 +417,7 @@ istioctl proxy-config secret $POD.default -o json | \
 ```
 
 Expected output:
-```
+```text
                 URI:spiffe://foo.com/ns/default/sa/httpbin
 ```
 
@@ -433,7 +433,7 @@ istioctl proxy-config secret $POD.istio-system -o json | \
 ```
 
 Expected output:
-```
+```text
                 URI:spiffe://foo.com/ns/istio-system/sa/istio-ingressgateway-service-account
 ```
 
