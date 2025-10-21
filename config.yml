@@ -16,7 +16,7 @@ markup:
     tabWidth: 2
     codeFences: true
     guessSyntax: true
-    noClasses: true
+    noClasses: false
 
 # Site parameters
 params:
