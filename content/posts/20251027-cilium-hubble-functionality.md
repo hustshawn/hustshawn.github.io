@@ -39,7 +39,7 @@ Hubble is Cilium's **observability platform** built on top of eBPF for network v
 - **Exposes gRPC API** on port 4244 for querying flows
 
 **What it sees:**
-```
+```text
 Pod A → Pod B (HTTP GET /api)
 Pod C → External IP (TCP SYN)
 Pod D ← DNS response
@@ -58,7 +58,7 @@ Network policy DROPPED packets
 - **Exposes gRPC API** on port 4245
 
 **Architecture:**
-```
+```text
 hubble CLI/UI
       ↓
 Hubble Relay (port 80/4245)
@@ -89,7 +89,7 @@ Node1  Node2  Node3  Node4
 - **Network policy visualization** - See what's allowed/blocked
 
 **What you see:**
-```
+```text
 Service Map:
   frontend ──(green)──> backend
   backend  ──(green)──> database
@@ -112,7 +112,7 @@ Service Map:
 
 ## Data Flow
 
-```
+```text
 1. Network packet arrives at node
          ↓
 2. eBPF captures packet metadata (Cilium agent)
